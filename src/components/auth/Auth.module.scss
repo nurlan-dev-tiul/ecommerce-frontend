@@ -1,0 +1,85 @@
+.auth_container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+    @media (max-width: 660px) {
+        display: block;
+    }
+}
+.form_container{
+    padding: 50px;
+}
+
+.form_header{
+    padding-bottom: 5px;
+    h4{
+        text-align: center;  
+    }
+}
+.form{
+    width: 100%;
+}
+
+.img_container{
+    padding: 50px;
+    position: relative;
+    background-image: url('https://cdn.pixabay.com/photo/2015/06/24/15/45/laptop-820274_960_720.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @media (max-width: 660px) {
+        display: none;
+    }
+}
+.icon{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    font-size: 25px;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.arrow_back_block{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 12px;
+    color: #56575A;
+    cursor: pointer;
+}
+.arrow_back_icon{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.register_link{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 12px;
+    cursor: pointer;
+    color: #56575A;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.form_btn{
+    width: 100%;
+    margin-top: 15px;
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.loading_spinner{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    padding: 0px;
+}

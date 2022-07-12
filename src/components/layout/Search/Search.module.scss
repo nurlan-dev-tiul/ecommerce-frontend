@@ -1,0 +1,48 @@
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        width: 150px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .header_search{
+        width: 50%;
+        margin-bottom: 0px !important;
+
+        input:focus{
+            box-shadow: none;
+            outline: none;
+            border: 1px solid #6c757d;
+        }
+
+        button:focus{
+            box-shadow: none;
+            outline: none;
+            border: 1px solid #6c757d;
+        }
+    }
+    .add_item{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        color: #999;
+        margin-left: 10px;
+        transition: all .2s;
+        svg{
+            font-size: 30px;
+        }
+        &:hover{
+            color: #484848;
+        }
+    }
+}
+
